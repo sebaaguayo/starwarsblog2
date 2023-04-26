@@ -10,3 +10,10 @@
 nav{
     background-color:#1A2225;
 }
+
+.dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px; /* set the maximum width of the favorite name */
+  }

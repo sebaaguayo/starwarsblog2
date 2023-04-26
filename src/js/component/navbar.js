@@ -4,6 +4,7 @@ import botonprincipal from "../../img/maytheforce.png";
 import { Context } from "../store/appContext";
 
 
+
 export const Navbar = () => {
 	const {store,actions} = useContext(Context) 
 	return (
@@ -68,10 +69,10 @@ export const Navbar = () => {
                         </li>
 					</Link>
 					<li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{"Favorites " + store.favorites.length}</a>
+                        <a className="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> <i className="far fa-heart"></i>  { store.favorites.length}</a>
                         <ul className="dropdown-menu">
                             {store.favorites.length == 0 ? (
-								<li className="dropdown-item">Empty</li>
+								<li className="dropdown-item">Vacio</li>
 							) :
 							(
 								store.favorites.map((favorite,i) => {
@@ -88,7 +89,7 @@ export const Navbar = () => {
 							<li className="dropdown-item"></li>
                         </ul>
                     </li>
-                    
+        
                 </ul>
             </div>
 

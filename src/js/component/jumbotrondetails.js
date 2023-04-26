@@ -1,54 +1,52 @@
 import React from "react";
-import "../../styles/jumbotrondetails.css";
-
-
-
 
 export const JumbotronCharacters = (props) => {
-    return (
-      <div className="jumbotron-container">
-      <div className="jumbotron-image">
-          <img
-            src={props.imagenjumbotron3}
-            alt="jumbotron3 image"
-          />
-          </div>
-        <div className="jumbotron-details">
-          <h1>{props.titulo3}</h1>
-          <p>{props.parrafo3}</p>
-        </div>
-        <hr className="col-md-12 my-3" style={{ borderTop: "1px solid #ccc" }} />
-        <div className="row justify-content-between text-secondary">
-          <div className="col-md-2 border-right">
-            <h2>Name</h2>
-            <p>{props.name}</p>
-          </div>
-          <div className="col-md-2 border-right">
-            <h2>Birth Year</h2>
-            <p>{props.birth_year}</p>
-          </div>
-          <div className="col-md-2 border-right">
-            <h2>Gender</h2>
-            <p>{props.gender}</p>
-          </div>
-          <div className="col-md-2 border-right">
-            <h2>Heigth</h2>
-            <p>{props.height}</p>
-          </div>
-          <div className="col-md-2 border-right">
-            <h2>Skin Color</h2>
-            <p>{props.skin_color}</p>
-          </div>
-          <div className="col-md-2 border-right">
-            <h2>Eye Color</h2>
-            <p>{props.eye_color}</p>
-          </div>
-        </div>
-        <hr className="col-md-12 my-3" style={{ borderTop: "1px solid #ccc" }} />
+  return (
+    <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+        <img
+          src={props.imagenjumbotron3}
+          alt="jumbotron3 image"
+          className="img-fluid w-100"
+        />
       </div>
-      
-    );
-  }
+      <div className="col-md-8 text-secondary">
+        <h1>{props.titulo3}</h1>
+        <p>{props.parrafo3}</p>
+      </div>
+      <hr className="col-md-12 my-3" style={{ borderTop: "1px solid #ccc" }} />
+      <div className="row justify-content-between text-secondary">
+        <div className="col-md-2 border-right">
+          <h4>Name</h4>
+          <p>{props.name}</p>
+        </div>
+        <div className="col-md-2 border-right">
+          <h4>Birth Year</h4>
+          <p>{props.birth_year}</p>
+        </div>
+        <div className="col-md-2 border-right">
+          <h4>Gender</h4>
+          <p>{props.gender}</p>
+        </div>
+        <div className="col-md-2 border-right">
+          <h4>Heigth</h4>
+          <p>{props.height}</p>
+        </div>
+        <div className="col-md-2 border-right">
+          <h4>Skin Color</h4>
+          <p>{props.skin_color}</p>
+        </div>
+        <div className="col-md-2 border-right">
+          <h4>Eye Color</h4>
+          <p>{props.eye_color}</p>
+        </div>
+      </div>
+      <hr className="col-md-12 my-3" style={{ borderTop: "1px solid #ccc" }} />
+    </div>
+    </div>
+  );
+}
   
   export const JumbotronPlanets = (props) => {
     return (
